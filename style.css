@@ -1,0 +1,131 @@
+body {
+    background-image: url("bgft.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a:link,
+a:visited {
+ 
+  text-decoration:none;
+  color:#eeeeee;
+}
+
+
+
+a:hover,
+a:focus,
+a:active {
+  border:0;
+  color:#fff;
+  
+}
+
+a:visited:hover,
+a:visited:focus,
+a:visited:active {
+  color:#fff;
+  
+}
+
+#container {
+  width:500px;
+  padding:0 0 50px;
+  margin-left: 140px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+blockquote {
+  margin:1em 0;
+}
+
+blockquote p {
+  margin:0;
+  font-size:2em;
+}
+
+
+
+
+/* ============================================================================================================================
+== OVER THOUGHT BUBBLE, EMPTY, WITH BORDER (more CSS3)
+** ============================================================================================================================ */
+
+.oval-thought-border {
+  position:relative;
+  padding:70px 30px;
+  margin:1em auto 80px;
+  border:10px solid #eeeeee;
+  text-align:center;
+  color:#eeeeee;
+  background:transparent;
+  
+
+
+  /* css3 */
+
+  -webkit-border-top-left-radius:240px 140px;
+  -webkit-border-top-right-radius:240px 140px;
+  -webkit-border-bottom-right-radius:240px 140px;
+  -webkit-border-bottom-left-radius:240px 140px;
+  -moz-border-radius:240px / 140px;
+  border-radius:240px / 140px;
+}
+
+/* creates the larger circle */
+.oval-thought-border:before {
+  content:"";
+  position:absolute;
+  z-index:10;
+  bottom:-40px;
+  right:100px;
+  width:50px;
+  height:50px;
+  border:10px solid #eeeeee;
+  background:transparent;
+  /* css3 */
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50px;
+  /* reduce the damage in FF3.0 */
+  display:block;
+}
+
+/* creates the smaller circle */
+.oval-thought-border:after {
+  content:"";
+  position:absolute;
+  z-index:10;
+  bottom:-60px;
+  right:50px;
+  width:25px;
+  height:25px;
+  border:10px solid #eeeeee;
+  background:transparent;
+  /* css3 */
+  -webkit-border-radius:25px;
+  -moz-border-radius:25px;
+  border-radius:25px;
+  /* reduce the damage in FF3.0 */
+  display:block;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  padding: 10px;
+  background-color: transparent;
+  color: #eeeeee;
+  font-family: Arial, Helvetica, sans-serif;
+}
