@@ -1,0 +1,78 @@
+@font-face {
+    src: url(OCRAEXT.TTF);
+    font-family: ocr;
+  }
+  body {
+      background-image: url("projbg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .cap{
+      width: 290px;
+      position: absolute;
+      top: 310px;
+      left: 538px;
+      opacity: 0;
+  }
+  .cap:hover {
+      opacity: 1;
+  }
+  .a1 {
+    display:inline-block;
+    width: 120px;
+    height:60px;
+    position: absolute;
+    left: 625px;
+    top: 593px;
+    background-color: transparent;
+   
+
+}
+
+.p1 {
+    text-align: center;
+    font-size: 40px;
+   opacity: 1;
+   font-family: ocr;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    padding: 10px;
+    background-color: transparent;
+    color: #eeeeee70;
+    font-family: ocr;
+  }
+  a:link,
+a:visited {
+ 
+  text-decoration:none;
+  color:#eeeeee70;
+}
+
+
+
+a:hover,
+a:focus,
+a:active {
+  border:0;
+  color:#fff;
+  
+}
+
+a:visited:hover,
+a:visited:focus,
+a:visited:active {
+  color:#fff;
+  
+}

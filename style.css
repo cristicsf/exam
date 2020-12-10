@@ -1,3 +1,7 @@
+@font-face {
+  src: url(OCRAEXT.TTF);
+  font-family: ocr;
+}
 body {
     background-image: url("bgft.png");
     background-repeat: no-repeat;
@@ -127,5 +131,5 @@ li a {
   padding: 10px;
   background-color: transparent;
   color: #eeeeee;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ocr;
 }
