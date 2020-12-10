@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Presentation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Sale platform for the New Hyundai Prophecy">
+        <meta name="keywords" content="car, Hyundai, Prophecy, concept, modern, electric, ">
+        <link rel="stylesheet" href="resetcss.css">
+        <link rel="stylesheet" href="prestyle.css">
+    </head>
+        <body>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="index.html">HOME</a>
+                <a href="presentation.html">PRESENTATION</a>
+                 <a href="specs.html">SPECIFICATIONS</a>
+                 <a href="preorder.html">PRE-ORDER</a>
+                </div>
+              </div>
+      
+              <a href="#"><img src="hlogo.png" alt="logo" width="180px" style="padding: 10px;" id="logo"></a>
+      
+              
+      
+                <span style="font-size:40px;cursor: pointer;float: right;color: white; padding: 0.3em; ;" onclick="openNav()">&#9776; </span>
+              
+              <script>
+                  function openNav() {
+                    document.getElementById("myNav").style.height = "100%";
+                  }
+                  
+                  function closeNav() {
+                    document.getElementById("myNav").style.height = "0%";
+                  }
+                  </script>
+
+
+        <video autoplay muted loop id="myVideo">
+            <source src="backgroundvideo.mp4" type="video/mp4">
+    
+            </video>
+            <script>
+                var video = document.getElementById("myVideo");
+                var btn = document.getElementById("myBtn");
+                
+                function myFunction() {
+                  if (video.paused) {
+                    video.play();
+                    btn.innerHTML = "Pause";
+                  } else {
+                    video.pause();
+                    btn.innerHTML = "Play";
+                  }
+                }
+                </script>
+
+
+            <p>When you say Prophecy you mean comfort, futurism and reliability.<br>
+                We put together the best components we have and created Prophecy ERA. The modern design but at the same time simple and compact makes it look like a panther at night, discreet, but on the other side the interior tells a completely different story, the new features of prophecy do not compare with any other car.<br>
+                Prophecy ERA differs from the rest of the cars due to the way it is driven, we got rid of the steering wheel which from our point of view is an "ancient" technology. Because the steering system is entirely electric, the steering wheel makes no sense in this equation.<br>
+                <br>
+                Although the design is the one that stands at the first glance, the amazing performance should not be forgotten. Prophecy era is able to reach 100 km in 1.7s, a performance worthy of formula 1.<br> And the fun that this car creates should never be stopped because "you need to refuel". In optimal parameters, Prophecy ERA has a range of 2500Km per single charge.
+                </p>
+        </body>
+  </html>

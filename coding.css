@@ -139,3 +139,13 @@ a:visited:active {
     filter: grayscale(0%);
     transition: .5s ease;
 }
+.contact{font-size: 1em;
+    font-family: ocr; 
+    font-size: 19px;
+    color: #eeeeee;
+    border:0;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: 1140px;
+  }

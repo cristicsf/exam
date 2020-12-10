@@ -1,0 +1,84 @@
+@font-face {
+    src: url(OCRAEXT.TTF);
+    font-family: ocr;
+  }
+  body {
+      background-image: url("background.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 150px;
+  }
+  .home{font-size: 1em;
+    font-family: ocr; 
+    font-size: 19px;
+    color: #eeeeee;
+    border:0;
+    margin-left: 30px;
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+   
+  
+
+  }
+  .contact{font-size: 1em;
+    font-family: ocr; 
+    font-size: 19px;
+    color: #eeeeee;
+    border:0;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: 1140px;
+  }
+
+  p {
+      font-size: 1.5em;
+      font-family: ocr; 
+      color: #eeeeee;
+      margin-top: 50px;
+      margin-left: 60px;
+      margin-right: 60px;
+  }
+  h1 {
+    font-size: 1.3em;
+    font-family: ocr; 
+    color: #eeeeee;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  iframe{
+      margin-left: 110px;
+      margin-top: 30px;
+  }
+  h2 {
+    font-size: 1.3em;
+    font-family: ocr; 
+    color: #eeeeee;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  img{
+      margin: 10px;
+  }
+  .cipri {
+      width: 280px;
+      margin-left: 130px;
+      
+      border: 6px solid black;
+  }
+  .faracipri{
+    width: 150px;
+    
+    border: 6px solid black;
+}
+  .marte{
+    width: 280px;
+    border:6px solid black;
+}
+  .ion{
+    width: 280px;
+    border: 6px solid black;
+}

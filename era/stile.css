@@ -1,0 +1,616 @@
+html {
+    scroll-behavior: auto;
+  }
+body {
+  background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+  }
+
+  p{
+      color: white;
+  }
+
+ 
+h1 {
+    font-size: 144px;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+    
+}
+
+#specs {
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+    margin-top: 60%;
+    padding: 13px;
+    position: relative;
+    display: block;
+    top: -660px;
+    left: 53%;
+    width: 600px;
+    margin-left: -300px;
+    height: auto;
+    font-size: 23px;
+    
+  }
+  
+  #specs td, #specs th {
+    padding: 15px;
+    border: white;
+  }
+  
+  #specs td{
+      text-align: justify;
+  }
+
+  #specs tr:nth-child(even){background-color: transparent}
+  
+  
+  
+  #specs th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: transparent;
+    color: white;
+  }
+
+
+ hr {
+      
+    width: 100%;
+    color: white;
+    margin-top: 50.2px;
+    
+    position: relative;
+    display: block;
+    top: 680px;
+    left: 53%;
+    width: 600px;
+    margin-left: -340px;
+    height: auto;
+    
+      
+  }
+
+#vr {
+    position: relative;
+    top: -600px;
+    max-width: 100%;
+  height: auto;
+}
+#matrix{
+    width: 400px;
+    display: flex;
+}
+
+.far{
+    position: relative;
+    top: -450px;
+    display: inline;
+    display: flex;
+    margin: 15px;
+    
+}
+#patrix {
+    flex: 3;
+    margin-left: 20px;
+}
+#matrix {
+   
+    margin-right: 20px;
+    flex: 1;
+    width: 500px;
+    position: relative;
+    left: 50px;
+}
+#faruri {
+    width: 700px;
+}
+
+.battery {
+    position: relative;
+    top: -300px;
+    margin: 30px;
+    display: table;
+    
+}
+#bat {
+    float: left;
+    width: 70%;
+    margin-top: 37px;
+    
+}
+#baterii {
+    float: right;
+    width: 30%;
+}
+.solar {
+    position: relative;
+    top: -100px;
+    margin: 50px;
+
+}
+
+
+
+#panouri{
+    width: 920px;
+    
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+
+.joy {
+    margin: 50px;
+
+}
+
+    #joystick{
+        width: 1020px;
+    
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    }
+
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+    
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+   
+  /** FML i hate to make things responsive dont even know if i can make this **/
+
+  @media only screen and (max-width:768px) {
+    /* For tablets: */
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background-image: url("background-phone.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;}
+  .joy {
+      margin: 5%;
+      position: relative;
+      top: -300px;
+      }
+  
+      #joystick{
+           width: 600px;
+          top: -300px;
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           
+            }
+
+      .solar {
+              position: relative;
+              top: -400px;
+              margin: 50px;
+          
+          }
+          
+          
+          
+       #panouri{
+              width: 600px;
+              
+              display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+          
+          }
+               
+          .battery {
+             position: relative;
+              top: -400px;
+              margin: 1%;
+              width: 300px;
+              left: 50px
+      
+              
+          }
+          #bat {
+              
+              display: block;
+              text-align: center;
+              padding-left: 70px;
+          
+             
+              margin: 1%;
+              
+              
+          }
+          #baterii {
+             
+            width: 600px;
+            
+      
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           
+          }
+
+          #vr {
+              position: relative;
+              top: -600px;
+              max-width: 100%;
+            height: auto;
+            
+          }
+          #matrix{
+              width: auto;
+              
+          }
+          
+          
+              
+              
+          
+          #patrix {
+              
+              margin-left: 0px;
+              position: relative;
+              top: -100px;
+              margin: 50px;
+              vertical-align: top;
+              display: inline-block;
+              text-align: center;
+              padding-left: 0px;
+          
+              margin-top: 37px;
+              margin: 1%;
+              
+          }
+          #matrix {
+             
+            margin-right: 20px;
+          
+            width: 280px;
+            position: relative;
+            left: 0px;
+            width: 300px;
+      
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .far{
+            position: relative;
+            top: -450px;
+            display: inline;
+            display: flex;
+            margin: 15px;
+          }
+          #faruri {
+              
+              display: none;
+              
+          }
+          
+
+          #specs {
+             
+              width: 100%;
+              color: white;
+              
+              padding: 2px;
+             padding-left:235px ;
+              text-align: center;
+              font-size: 14px;
+              line-height: 22.1px;
+              position: relative;
+              left: 300px;
+              
+
+              
+            }
+            
+            #specs td, #specs th {
+              
+              border: white;
+            }
+            
+            
+          
+            #specs tr:nth-child(even){background-color: transparent}
+            
+            
+            
+            #specs th {
+              
+              
+              background-color: transparent;
+              color: white;
+            }
+            hr {
+               color: white;
+              position: relative;
+              display: block;
+              top: 308px;
+              width: 300px;
+             left: 580px;
+              height: auto;
+              
+            
+            }
+          
+      #logo {
+          width: 100px;
+}
+
+      h1 {
+          font-size: 44px;
+          color: white;
+          margin: 0;
+          position: absolute;
+          top: 10%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%) 
+          }
+}
+
+
+
+
+@media only screen and (max-width:480px) {
+    /* For mobile phones: */
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        background-image: url("background-phone.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;}
+    .joy {
+        margin: 5%;
+    
+        }
+    
+        #joystick{
+             width: 300px;
+        
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+             
+              }
+
+        .solar {
+                position: relative;
+                top: -350px;
+                margin: 50px;
+            
+            }
+            
+            
+            
+         #panouri{
+                width: 300px;
+                
+                display: block;
+              margin-left: auto;
+              margin-right: auto;
+              
+            
+            }
+                 
+            .battery {
+               position: relative;
+                top: -400px;
+                margin: 1%;
+                width: 300px;
+                left: 50px
+        
+                
+            }
+            #bat {
+                
+                display: block;
+                text-align: center;
+                padding-left: 70px;
+            
+               
+                margin: 1%;
+                
+                
+            }
+            #baterii {
+               
+              width: 300px;
+              
+        
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+             
+            }
+
+            #vr {
+                position: relative;
+                top: -600px;
+                max-width: 100%;
+              height: auto;
+              
+            }
+            #matrix{
+                width: auto;
+                
+            }
+            
+            
+                
+                
+            
+            #patrix {
+                
+                margin-left: 0px;
+                position: relative;
+                margin-left: 0px;
+                top: -100px;
+                margin: 50px;
+                vertical-align: top;
+                display: inline-block;
+                text-align: center;
+                padding-left: 0px;
+            
+                margin-top: 37px;
+                margin: 1%;
+                
+            }
+            #matrix {
+               
+              margin-right: 20px;
+            
+              width: 280px;
+              position: relative;
+              left: 0px;
+              width: 300px;
+        
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            .far{
+              position: relative;
+              top: -450px;
+              display: inline;
+              display: flex;
+              margin: 15px;
+            }
+            #faruri {
+                
+                display: none;
+                
+            }
+            
+
+            #specs {
+               
+               
+
+              width: 100%;
+              color: white;
+              
+              padding: 2px;
+             padding-left:40px ;
+              text-align: center;
+              font-size: 14px;
+              line-height: 22.1px;
+              position: relative;
+              left: 300px;
+              
+
+                
+              }
+              
+              #specs td, #specs th {
+                
+                border: white;
+              }
+              
+              
+            
+              #specs tr:nth-child(even){background-color: transparent}
+              
+              
+              
+              #specs th {
+                
+                
+                background-color: transparent;
+                color: white;
+              }
+              hr {
+                 color: white;
+                position: relative;
+                display: block;
+                top: 148px;
+                width: 300px;
+               left: 400px;
+                height: auto;
+                
+              
+              }
+            
+        #logo {
+            width: 100px;
+}
+
+        h1 {
+            font-size: 44px;
+            color: white;
+            margin: 0;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%) 
+            }
+  }
+ 

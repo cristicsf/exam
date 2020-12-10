@@ -1,0 +1,186 @@
+:root{
+    --first: rgb: 0 0 0 0.3;
+    --second: #000000;
+    --third: rgb(224, 219, 219);
+}
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    /*outline:  solid white 3px;*/
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    background:url('car10.png') no-repeat center  center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+h1 {
+    text-shadow: -6px 6px 8px rgba(0,0,0,0.85);
+    color: #ffffff
+}
+/*header*/
+
+.heading h1 {
+    font-size: 5.5vw;
+    margin-top: 20px;
+    margin-left: 6em;
+    font-weight: 400;
+    letter-spacing: 4px;
+    word-spacing: -36px;
+    position: -webkit-sticky;
+    
+}
+
+.header{
+    background-color: var(--first);
+    width: 100%;
+    position: absolute; 
+    top: 0;
+    z-index: 1;
+    font-size: 15px;
+}
+
+
+
+.header ul{
+    font-weight: 500;
+    text-align: center;
+    float: right;
+    padding: 0;
+    overflow: hidden;
+    margin-top: -45px;
+}
+
+
+.header ul a{
+    font-weight: 400;
+    margin: 10px;
+    display: block;
+    padding: 10px 0;
+    color: #a8a8a8;
+    font-size: 25px;
+
+}
+
+.header ul a:hover{
+    background-color: #bbbbc2;
+    color:rgb(14, 13, 15) ;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.header .logo{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    margin-top: 5px;
+    color: var(--third);
+}
+
+.header {
+    padding-left: 5px;
+}
+
+.header .logo span{
+    font-size: 15px;
+    margin-left: 0.9em;
+    margin-bottom: 1em;
+}
+
+.header .navigation {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon{
+    padding: 28px 20px;
+    position: relative;
+    float: right ;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon{
+    background: var(--third);
+    display: block;
+    height: 3px;
+    width: 27px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before{
+    background: var(--third);
+    content:"" ;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 10px;
+}
+
+.header .menu-icon .nav-icon::after{
+    background: var(--third);
+    content:"" ;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -9px;
+}
+
+.header .menu-btn{
+    display: none;
+}
+
+.header .menu-btn:checked ~ .navigation {
+    max-height: 280px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+    transform: rotate(-45deg); 
+    top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+}
+ 
+
+/*small tablet*/
+@media (max-width: 800px) {
+    .heading h1 {
+        margin-top: 2.1em;
+        font-size: 46px;
+        word-spacing: -10px;
+        margin-left: 1.9em;
+    }
+
+    .header ul{
+        font-weight: 500;
+        text-align: center;
+        float: right;
+        padding: 0;
+        overflow: hidden;
+        margin-top: -45px;
+    }
+
+    .header ul a {
+        font-size: 15px;
+    }
+}
