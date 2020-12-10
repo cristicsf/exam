@@ -3,7 +3,7 @@
     font-family: ocr;
   }
   body {
-      background-image: url("projbg.png");
+      background-image: url("img/projbg.png");
       background-repeat: no-repeat;
       background-size: cover;
   }
@@ -13,9 +13,11 @@
       top: 310px;
       left: 538px;
       opacity: 0;
+      transition: .4s ease;
   }
   .cap:hover {
       opacity: 1;
+      transition: .4s ease;
   }
   .a1 {
     display:inline-block;
@@ -75,4 +77,65 @@ a:visited:focus,
 a:visited:active {
   color:#fff;
   
+}
+
+.space {
+    width: 300px;
+    position: absolute;
+    top: 210px;
+    left: 70px;
+    filter: grayscale(100%);
+    border: 8px solid black;
+}
+.bolt{
+    width: 300px;
+    position: absolute;
+    top: 210px;
+    right: 70px;
+    filter: grayscale(100%);
+    border: 8px solid black;
+}
+.river{
+    width: 250px;
+    position: absolute;
+    top: 440px;
+    left: 140px;
+    filter: grayscale(100%);
+    border: 8px solid black;
+}
+.break{
+    width: 250px;
+    position: absolute;
+    top: 432px;
+    right: 140px;
+    filter: grayscale(100%);
+    border: 8px solid black;
+}
+.era {
+    width: 300px;
+    position: absolute;
+    top: 160px;
+    left: 525px;
+    filter: grayscale(100%);
+    border: 8px solid black;
+}
+ .space:hover {
+    filter: grayscale(0%);
+    transition: .5s ease;
+}
+.era:hover {
+    filter: grayscale(0%);
+    transition: .5s ease;
+}
+.break:hover {
+    filter: grayscale(0%);
+    transition: .5s ease;
+}
+.river:hover {
+    filter: grayscale(0%);
+    transition: .5s ease;
+}
+.bolt:hover {
+    filter: grayscale(0%);
+    transition: .5s ease;
 }
