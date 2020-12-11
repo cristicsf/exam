@@ -84,3 +84,95 @@ h4{
     margin-top: 20px;
     
 }
+@media (max-width: 420px) {
+    body {
+      background-image: url("mobil.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .p1 {
+        font-size: 1.2em;
+        font-family: ocr; 
+        color: #eeeeee;
+        margin-top: 40px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .p2 {
+        font-size: 1.2em;
+        font-family: ocr; 
+        color: #eeeeee;
+        margin-top: 30px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    .p3 {
+        font-size: 1.2em;
+        font-family: ocr; 
+        color: #eeeeee;
+        margin-top: 30px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    a{
+        text-decoration: none;
+        color: blanchedalmond;
+    }
+    
+    h3{
+        font-size: 1.1em;
+        font-family: ocr; 
+        color: #eeeeee;
+        margin-top: 30px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    
+    
+      .home{font-size: 1em;
+        font-family: ocr; 
+        font-size: 19px;
+        color: #eeeeee;
+        border:0;
+        margin-left: 30px;
+        position: relative;
+        top: 10px;
+        text-decoration: none;
+      }
+    img{
+        width: 100px;
+        padding: 15px;
+        
+    }   
+    div {
+        margin-left: 40px;
+        margin-top: 0px;
+    }
+    .tinder{
+        width: 100px;
+        position: absolute;
+        left: 200px;
+        bottom: -280px;
+    }
+    h4{
+        font-size: 1.5em;
+        font-family: ocr; 
+        color: #eeeeee;
+        position: absolute;
+        left: 50px;
+        margin-top: 20px;
+        
+    }
+
+
+
+
+
+
+
+
+
+}

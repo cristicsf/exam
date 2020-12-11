@@ -7,6 +7,34 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.mobil{ 
+  opacity: 0;
+  width: 150px;
+  filter: grayscale(100%);
+}
+
+.projmobil{ 
+  opacity: 0;
+  width: 150px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+.medmobil{ 
+  opacity: 0;
+  width: 150px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+.edmobil{ 
+  opacity:0 ;
+  width: 150px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
 
 a:link,
 a:visited {
@@ -69,11 +97,6 @@ blockquote p {
 
 
 
-
-/* ============================================================================================================================
-== OVER THOUGHT BUBBLE, EMPTY, WITH BORDER (more CSS3)
-** ============================================================================================================================ */
-
 .oval-thought-border {
   position:relative;
   padding:70px 30px;
@@ -87,12 +110,7 @@ blockquote p {
 
   /* css3 */
 
-  -webkit-border-top-left-radius:240px 140px;
-  -webkit-border-top-right-radius:240px 140px;
-  -webkit-border-bottom-right-radius:240px 140px;
-  -webkit-border-bottom-left-radius:240px 140px;
-  -moz-border-radius:240px / 140px;
-  border-radius:240px / 140px;
+  
 }
 .oval-thought-border:hover {
 opacity: 1;
@@ -119,4 +137,95 @@ li a {
   color: #eeeeee;
   font-family: ocr;
   
+}
+
+
+@media (max-width: 420px) {
+  body {
+    background-image: url("mobil.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mobil{
+  opacity: 1;
+  position: fixed;
+  bottom: 0px;
+  left: 30%;
+}
+.projmobil{
+  opacity: 1;
+position: absolute;
+width: 250px;
+margin-left: 20%;
+top: 30px;
+
+}
+
+.medmobil{
+  opacity: 1;
+  position: absolute;
+width: 250px;
+margin-left: 20%;
+top: 230px;
+}
+.edmobil{
+  opacity: 1;
+  position: absolute;
+  width: 250px;
+  margin-left: 20%;
+  top: 420px;
+}
+
+#container1 {
+  display: none;
+ 
+ 
+  
+}
+#container2 {
+  display: none;
+  
+  
+}
+#container3 {
+display: none;
+   
+   
+}
+
+blockquote {
+  margin: 0.2em ;
+  display: none;
+}
+
+blockquote p {
+  margin:0;
+  font-size:2em;
+  display: none;
+}
+.oval-thought-border {
+  position: absolute;;
+
+ 
+  
+  text-align:center;
+  color:#eeeeee;
+  background:transparent;
+  opacity: 1;
+  display: none;
+  
+
+ 
+
+
+}
+
+
+
+
+
+
+
+
+
 }

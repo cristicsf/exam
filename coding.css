@@ -149,3 +149,107 @@ a:visited:active {
     top: 10px;
     left: 1140px;
   }
+
+  @media (max-width: 420px) {
+    body {
+      background-image: url("mobil.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .space {
+      width: 250px;
+      position: absolute;
+      margin-top: -180px;
+      margin-left: -40px;
+      filter: grayscale(100%);
+      border: 8px solid black;
+  }
+  .bolt{
+    width: 250px;
+    position: absolute;
+    margin-top: -35px;
+    margin-right: -40px;
+    filter: grayscale(100%);
+    border: 8px solid black;
+  }
+  .river{
+    width: 200px;
+    position: absolute;
+    margin-top: -120px;
+    margin-left: -110px;
+    filter: grayscale(100%);
+    border: 8px solid black;
+  }
+  .break{
+    width: 200px;
+      
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 400px;
+    filter: grayscale(100%);
+    border: 8px solid black;
+  }
+  .era {
+      width: 250px;
+      
+      position: absolute;
+      margin-top: 337px;
+      margin-left: -400px;
+      filter: grayscale(100%);
+      border: 8px solid black;
+  }
+   .space:hover {
+      filter: grayscale(0%);
+      transition: .5s ease;
+  }
+  .era:hover {
+      filter: grayscale(0%);
+      transition: .5s ease;
+  }
+  .break:hover {
+      filter: grayscale(0%);
+      transition: .5s ease;
+  }
+  .river:hover {
+      filter: grayscale(0%);
+      transition: .5s ease;
+  }
+  .bolt:hover {
+      filter: grayscale(0%);
+      transition: .5s ease;
+  }
+  .contact{font-size: 1em;
+      font-family: ocr; 
+      font-size: 19px;
+      color: #eeeeee;
+      border:0;
+      text-decoration: none;
+      position: absolute;
+      top: 10px;
+      left: 1140px;
+    }
+  
+    .a1 {
+      display:inline-block;
+      width: 120px;
+      height:60px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      background-color: transparent;
+     
+  
+  }
+  
+  .p1 {
+      text-align: center;
+      font-size: 20px;
+     opacity: 1;
+     font-family: ocr;
+  }
+  
+  
+  
+  
+  
+  }

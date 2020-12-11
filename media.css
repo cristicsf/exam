@@ -82,3 +82,80 @@
     width: 280px;
     border: 6px solid black;
 }
+
+@media (max-width: 420px) {
+  body {
+    background-image: url("mobil.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  iframe{
+    margin-left: 70px;
+    margin-top: 30px;
+    width: 256px;
+    height: 144px;
+  }
+    .contact{font-size: 1em;
+      font-family: ocr; 
+      font-size: 19px;
+      color: #eeeeee;
+      border:0;
+      text-decoration: none;
+      position: absolute;
+      top: 10px;
+      left: 240px;
+    }
+
+
+    h1 {
+      font-size: 1.3em;
+      font-family: ocr; 
+      color: #eeeeee;
+      margin-top: 50px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+
+    h2 {
+      font-size: 1.3em;
+      font-family: ocr; 
+      color: #eeeeee;
+      margin-top: 50px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+
+    img{
+      margin: 10px;
+  }
+  .cipri {
+      width: 280px;
+      margin-left: 40px;
+      
+      border: 6px solid black;
+  }
+  .faracipri{
+    width: 150px;
+    margin-left: 100px;
+    border: 6px solid black;
+}
+  .marte{
+    width: 280px;
+    border:6px solid black;
+    margin-left: 50px;
+}
+  .ion{
+    width: 280px;
+    border: 6px solid black;
+    margin-left: 50px;
+}
+
+
+
+
+
+
+}
